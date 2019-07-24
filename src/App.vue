@@ -7,8 +7,8 @@
   </el-header>
 
   <el-container class="flex-fill root-container">
-    <el-aside width="200px">
-      <el-menu default-active="home" @select="handleSelect">
+    <el-aside class="main-aside" width="200px">
+      <el-menu class="panel" default-active="home" @select="handleSelect">
         <el-menu-item index="home">首页</el-menu-item>
         <el-menu-item index="mp/post">发文章</el-menu-item>
         <el-menu-item index="mp/list">内容管理</el-menu-item>
@@ -20,8 +20,6 @@
       <router-view/>
     </el-main>
   </el-container>
-
-  <el-footer height="30px" class="flex flex-middle flex-center root-container">&copy; 2019</el-footer>
 </el-container>
 </template>
 
